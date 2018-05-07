@@ -61,7 +61,8 @@ print (" Distance to run in a 10K race (in miles) is",nuOfMiles)
 print("----Boolean Assignments----")
 print (" Assignment",a+12)
 amIHuman = True
-print (" Am I a Human being?",amIHuman)
+doIThink = True
+print (" Am I an intelligent Human being?",amIHuman and doIThink)
 
 print (" Assignment",a+13)
 isClassChallenging = False
@@ -69,11 +70,14 @@ print (" Is the python class challenging?",isClassChallenging)
 
 print (" Assignment",a+14)
 isPythonFree = True
-print (" Is Python free to use?",isPythonFree)
+CanILearnPythonForFree = False
+print (" Can I become an expert on Python for free?",isPythonFree \
+       and CanILearnPythonForFree )
 
 print (" Assignment",a+15)
 areThereOnlyFourVariableTypes = False
-print (" Are there only four variable types in Python?",areThereOnlyFourVariableTypes )
+print (" Are there only four variable types in Python?",\
+       areThereOnlyFourVariableTypes )
 
 
 
