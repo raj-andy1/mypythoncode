@@ -1,5 +1,5 @@
 """
-homework 1 - Andy Rajagopalan
+homework 1 - Anandthirth Rajagopalan
 """
 a = 1
 #String Assignments

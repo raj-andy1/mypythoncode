@@ -2,10 +2,16 @@
 Homework 2- AnandthirthRajagopalan
 """
 
+COST_PER_HAMBURGER = 3.00
+COST_PER_HOTDOG = 2.00
+COST_PER_MILKSHAKE = 3.00
+TAX_RATE = 0.1
+
 def calculateBill(numOfHB,numOfHD,numOfMS):
-    totalAmtBeforeTax = numOfHB * 3 + numOfHD * 2 + numOfMS * 3
+    totalAmtBeforeTax = numOfHB * COST_PER_HAMBURGER + numOfHD * COST_PER_HOTDOG \
+                        + numOfMS * COST_PER_MILKSHAKE
     #print (totalAmtBeforeTax)
-    totalAmtAfterTax = totalAmtBeforeTax + totalAmtBeforeTax * 0.1
+    totalAmtAfterTax = totalAmtBeforeTax + (totalAmtBeforeTax * TAX_RATE)
     #print (totalAmtAfterTax)
     return (totalAmtAfterTax)
 
