@@ -23,7 +23,8 @@ while True:
             doubleCnt += 1
             #print ("Double Count",doubleCnt)
     doublePercent = (doubleCnt/chanceNum) * 100
-    print ("After",chanceNum,"rounds, we got",doubleCnt,"doubles with a double percentage of",doublePercent)
+    print ("After",chanceNum,"rounds, we got",doubleCnt,"doubles with a double \
+percentage of",doublePercent)
     goAgain = input("Do you want to keep going? Hit Enter to continue or q to quit")
     if goAgain == 'q':
         break
