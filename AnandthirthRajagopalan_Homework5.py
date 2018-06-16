@@ -2,8 +2,6 @@
 Homework5 - Anandthirth Rajagopalan
 """
 total = 0
-minNm = 0
-maxNm = 0
 myNumList = []
 
 while True:
@@ -15,7 +13,7 @@ while True:
     except:
         print("That's not an integer")
         continue
-    myNumList.append(float(userNum))
+    myNumList.append(userNum)
     #print (myNumList)
     #print (len(myNumList))
 #Calculate total of all numbers and print each number    
@@ -24,9 +22,12 @@ for num in myNumList:
     total += num
 avg = total / len(myNumList)
 #Calculate least number
+minNm = myNumList[0]
 for num in myNumList:
     if num < minNm:
         minNm = num
+#Calculate largets number
+maxNm = myNumList[0]
 for num in myNumList:
     if num > maxNm:
         maxNm = num

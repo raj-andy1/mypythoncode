@@ -13,22 +13,25 @@ print ('Random index is',myIndex)
 print ('Random list item is',myList[myIndex])
 while True:
     userInput = input('Press p for previous, n for next, \
-or anything else to quit')
+or q to quit')
     if userInput == 'n':
         myIndex += 1
-        print (myIndex)
-        while myIndex <= len(myList):
+        if myIndex < len(myList):
             print ('Next item in list is',myList[myIndex])
-            if myIndex > len(myList):
-                myIndex = (myIndex % len(myList))
-            else:
-                break
-                
+        else:
+            print ('Range exceeded')
+            myIndex = myIndex % len(myList)
+            print ('Wrapping around, Next item in list is',myList[myIndex])
     elif userInput == 'p':
         myIndex -= 1
-        print (myIndex) 
-        print ('Previous item in list is',myList[myIndex])
-    else:
+        if abs(myIndex) <= len(myList):
+            print (myIndex)
+            print ('Print previous item in list is',myList[myIndex])
+        else:
+            print ('Range exceeded')
+            myIndex = myIndex % len(myList)
+            print ('Wrapping around, Next item in list is',myList[myIndex])
+    elif userInput == 'q':
         break
 print ("Ok BYE")
         
