@@ -16,5 +16,5 @@ for a in range (0,10):
             for d in range (0,10):
                 #print ('d',d)
                 if (a ** 2 + b ** 2 == c **2 + d ** 2):
-                    if a != b != c != d:
+                    if a != b and b != c and c != d and d != a and a != c and b != d :
                         print (a, b, c, d)
