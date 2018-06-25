@@ -48,6 +48,7 @@ while True:
     bet = input('How many coins do you want to bet (defaults to 1, enter 0 to quit): ')
 
     if bet == 0:
+        print (type(bet))
         print( 'Sorry to see you go.  Come back again soon.')
         sys.exit(0)     # New, but works to quit the program
     if bet == '':
